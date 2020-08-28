@@ -1,0 +1,29 @@
+//uds se inventan la historia
+somos fisicos (en la serie son fisicos) y necesitamos una cinta para
+un experimento de friccion con un sistema de poleas
+y una pinza metalica(algo con lo que vamos a hacer friccion)
+necesitamos comprar cierta cantidad de un cinta especial,
+la pondremos en todo el sistema de poleas, la cinta ira girando
+sobre las poleas, con la pinza metalica haciendo friccion en 
+algun punto (nunca sobre una polea), cuando pasa esto la cinta
+se va gastando, por simplicidad solo diremos que la cinta se va
+gastando en posiciones enteras, para un cinta de grosor X, al hacer friccion
+en un punto Y, queda X - 1 grosor de cinta en la posicion X, 
+la cinta va recorriendo de 1cm en 1cm por segundo
+
+
+Para que nuestro experimento sea un logro, necesitamos que la cinta
+recista T segundos. 
+
+Te mandaron a ti a la ferreteria a comprar la cinta,
+conociendo que existen X poleas de mismo radio r, cada polea 
+es un punto en el plano carteciano x,y con radio r
+(se garantiza que te los dan en sentido anti horario), tienes que comprar
+una cinta con grosor minimo talque recista el experimento T segundos.
+
+Imprimir la longitud de la cinta y el grosor de la misma.
+
+
+
+
+

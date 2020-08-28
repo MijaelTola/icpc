@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int n,m;
+        cin >> n >> m;
+
+        for (int i = 0; i < (1 << n); ++i) {
+            
+            if(__builtin_popcount(i) == m) {
+                for (int j = n - 1; j >= 0; j--) {
+                    cout << !!(i & (1 << j));
+                }
+                cout << "\n";
+            }
+        }
+
+        if(t) cout << "\n";
+    }
+
+    return 0;
+}
+

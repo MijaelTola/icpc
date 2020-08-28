@@ -1,0 +1,32 @@
+<% include ../header %>
+
+<%console.log(isAuthenticated);%>
+<%console.log(user);%>
+<div class="container">
+	<div class="col-sm-6 col-sm-offset-3">
+		<h3> Registro </h3>
+		<div class="row">
+
+			<form class="col s12" action="http://localhost:3000/depots/register" method="POST" autocomplete="off">
+				
+				<div class="row">
+					<div class="input-field col s12">
+						<input type="number" name='producto' class="validate">
+						<label for="descripcion">Detalles del producto</label>
+					</div>			
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input type="number" name='stock' class="validate">
+						<label for="descripcion">Detalles del producto</label>
+					</div>			
+				</div>
+				<input class="btn" type="submit" value="Registro">
+				<a class="waves-effect waves-light btn" href="http://localhost:3000/depots">Atras</a>
+
+			</form>
+
+		</div>
+	</div>
+</div>
+<% include ../footer %>
