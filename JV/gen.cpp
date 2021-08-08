@@ -1,22 +1,24 @@
 #include <iostream>
+#include <set>
 
 using namespace std;
 
 int main(){
     
-    for (int k = 0; k < 100; ++k) {
-        
-        int n = rand() % 100;
-        if(n == 0) continue;
-        cout << n << "\n";
-        for (int i = 0; i < n; ++i) {
-            cout << rand() % 2 << " ";
-        }
-        cout << "\n";
+    int n = 100;
+    int k = 1e5;
+
+    set<int> s;
+    
+    while((int)s.size() < n) {
+        s.insert((rand() % k) + 1);
     }
-    cout << 100 << "\n";
-    for (int i = 0; i < 100; ++i)
-        cout << 0 << " ";
+    
+    cout << n << " " << k << "\n";
+    
+    for (auto x: s)
+        cout << x << " ";
     cout << "\n";
+
     return 0;
 }

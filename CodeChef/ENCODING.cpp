@@ -6,6 +6,7 @@ const int mod = 1e9 + 7;
 int n;
 string s;
 long long e[100010];
+
 pair<long long,long long> dp[100010][2][10];
 pair<long long,long long> f(int pos, bool flag, int dig) {
     if(pos == n) return {0, 1};
